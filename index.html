@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Challenges 2025: Understanding Tomorrow's Biggest Problems</title>
+    <meta name="description" content="Explore the three critical global challenges of 2025: Trust Deficit, Climate Crisis, and Socio-Economic Inequality. Interactive data, real statistics, and solutions.">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- Chart.js for data visualization -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- AOS for scroll animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+   
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-globe-americas"></i>
+                <span>Global Challenges 2025</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#overview" class="nav-link">Overview</a>
+                <a href="#misinformation" class="nav-link">Trust Crisis</a>
+                <a href="#climate" class="nav-link">Climate Crisis</a>
+                <a href="#inequality" class="nav-link">Inequality</a>
+                <a href="#solutions" class="nav-link">Solutions</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text" data-aos="fade-up">
+                <h1>The Three Critical Challenges Defining 2025</h1>
+                <p class="hero-subtitle">Understanding the interconnected crises that threaten global stability and progress</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">2B+</span>
+                        <span class="stat-label">People in Informal Employment</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">89%</span>
+                        <span class="stat-label">Want More Climate Action</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">120M+</span>
+                        <span class="stat-label">Forcibly Displaced</span>
+                    </div>
+                </div>
+                <a href="#overview" class="cta-button">
+                    <span>Explore the Challenges</span>
+                    <i class="fas fa-arrow-down"></i>
+                </a>
+            </div>
+        </div>
+        <div class="hero-visual" data-aos="fade-left" data-aos-delay="200">
+            <div class="crisis-wheel">
+                <div class="wheel-center">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <span>2025</span>
+                </div>
+                <div class="wheel-segment segment-1">
+                    <i class="fas fa-fake-news"></i>
+                    <span>Trust Crisis</span>
+                </div>
+                <div class="wheel-segment segment-2">
+                    <i class="fas fa-temperature-high"></i>
+                    <span>Climate Crisis</span>
+                </div>
+                <div class="wheel-segment segment-3">
+                    <i class="fas fa-balance-scale"></i>
+                    <span>Inequality</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section id="overview" class="overview-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>A World at the Crossroads</h2>
+                <p>Analysis of leading global foresight reports reveals a dangerous convergence of interconnected crises threatening global stability.</p>
+            </div>
+            
+            <div class="overview-grid">
+                <div class="overview-card card-misinformation" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3>Trust Deficit & Misinformation</h3>
+                    <p>The #1 threat multiplier undermining institutional trust and hampering solutions to all other crises.</p>
+                    <div class="card-stat">
+                        <span class="stat-number">443</span>
+                        <span class="stat-text">Global fact-checking projects struggling to keep up</span>
+                    </div>
+                </div>
+                
+                <div class="overview-card card-climate" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-icon">
+                        <i class="fas fa-temperature-high"></i>
+                    </div>
+                    <h3>Climate & Environmental Crisis</h3>
+                    <p>Extreme weather events and environmental degradation demanding urgent, localized adaptation.</p>
+                    <div class="card-stat">
+                        <span class="stat-number">1.55°C</span>
+                        <span class="stat-text">Global temperature rise above pre-industrial levels</span>
+                    </div>
+                </div>
+                
+                <div class="overview-card card-inequality" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>Socio-Economic Inequality</h3>
+                    <p>Persistent inequality creating opportunity gaps for billions, exacerbated by rapid technological change.</p>
+                    <div class="card-stat">
+                        <span class="stat-number">800M+</span>
+                        <span class="stat-text">People projected to live in extreme poverty</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sdg-progress" data-aos="fade-up" data-aos-delay="400">
+                <h3>SDG Progress Tracker</h3>
+                <div class="progress-visual">
+                    <div class="progress-item">
+                        <span class="progress-label">On Track</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill on-track" style="width: 35%"></div>
+                        </div>
+                        <span class="progress-percent">35%</span>
+                    </div>
+                    <div class="progress-item">
+                        <span class="progress-label">Too Slow</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill too-slow" style="width: 47%"></div>
+                        </div>
+                        <span class="progress-percent">47%</span>
+                    </div>
+                    <div class="progress-item">
+                        <span class="progress-label">Regressing</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill regressing" style="width: 18%"></div>
+                        </div>
+                        <span class="progress-percent">18%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Misinformation Section -->
+    <section id="misinformation" class="challenge-section misinformation-bg">
+        <div class="container">
+            <div class="challenge-header" data-aos="fade-up">
+                <div class="challenge-icon">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </div>
+                <h2>Trust Deficit & Misinformation Crisis</h2>
+                <p class="challenge-subtitle">The #1 threat multiplier for 2025 - undermining the foundations of trust, cooperation, and shared reality</p>
+            </div>
+            
+            <div class="challenge-content">
+                <div class="challenge-stats" data-aos="fade-right">
+                    <div class="stat-card">
+                        <i class="fas fa-search"></i>
+                        <h3>Misinformation becomes #1 risk by 2027</h3>
+                        <p>World Economic Forum Global Risks Survey</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-robot"></i>
+                        <h3>AI accelerates false narrative spread</h3>
+                        <p>Scale, precision, and persuasiveness increased</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-users"></i>
+                        <h3>443 fact-checking projects worldwide</h3>
+                        <p>Still overwhelmed by misinformation volume</p>
+                    </div>
+                </div>
+                
+                <div class="challenge-visual" data-aos="fade-left">
+                    <div class="chart-container">
+                        <canvas id="misinformationChart" style="height: 400px;"></canvas>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="impact-section" data-aos="fade-up">
+                <h3>Real-World Impact</h3>
+                <div class="impact-grid">
+                    <div class="impact-item">
+                        <i class="fas fa-divide"></i>
+                        <h4>Societal Polarization</h4>
+                        <p>False narratives fuel division and undermine social cohesion</p>
+                    </div>
+                    <div class="impact-item">
+                        <i class="fas fa-university"></i>
+                        <h4>Institutional Trust Erosion</h4>
+                        <p>Trust in government, media, and science continues declining</p>
+                    </div>
+                    <div class="impact-item">
+                        <i class="fas fa-heart-broken"></i>
+                        <h4>Direct Harm</h4>
+                        <p>Misinformation leads to real-world violence and health risks</p>
+                    </div>
+                </div>
+                
+                <div class="challenge-image" data-aos="fade-up" data-aos-delay="200">
+                    <img src="information-disorder-framework.png" alt="Information Disorder Framework showing the relationship between misinformation, disinformation, and mal-information" style="width: 100%; max-width: 600px; height: auto; border-radius: 12px; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); margin: 2rem auto; display: block;">
+                    <p style="text-align: center; font-size: 0.875rem; color: #6b7280; margin-top: 1rem;">Information Disorder Framework - Understanding the ecosystem of false information</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Climate Section -->
+    <section id="climate" class="challenge-section climate-bg">
+        <div class="container">
+            <div class="challenge-header" data-aos="fade-up">
+                <div class="challenge-icon">
+                    <i class="fas fa-temperature-high"></i>
+                </div>
+                <h2>Climate & Environmental Crisis</h2>
+                <p class="challenge-subtitle">Extreme weather events ranked as the most severe long-term threat to global stability</p>
+            </div>
+            
+            <div class="challenge-content">
+                <div class="challenge-stats" data-aos="fade-right">
+                    <div class="stat-card">
+                        <i class="fas fa-thermometer-full"></i>
+                        <h3>2024: Hottest year on record</h3>
+                        <p>1.55°C above pre-industrial levels</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-cloud"></i>
+                        <h3>CO₂ at highest levels in 2 million years</h3>
+                        <p>Atmospheric carbon dioxide concentrations</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>89% want more climate action</h3>
+                        <p>Global survey on government climate response</p>
+                    </div>
+                </div>
+                
+                <div class="challenge-visual" data-aos="fade-left">
+                    <div class="chart-container">
+                        <canvas id="climateChart" style="height: 400px;"></canvas>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="climate-impacts" data-aos="fade-up">
+                <h3>Climate Impact Timeline</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-year">2024</div>
+                        <div class="timeline-content">
+                            <h4>Record Breaking Heat</h4>
+                            <p>Global temperatures reach 1.55°C above pre-industrial levels</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2025</div>
+                        <div class="timeline-content">
+                            <h4>Extreme Weather Events</h4>
+                            <p>Wildfires, floods, heatwaves, and coral bleaching intensify</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2030</div>
+                        <div class="timeline-content">
+                            <h4>Critical Tipping Point</h4>
+                            <p>Major climate systems risk irreversible changes</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="challenge-image" data-aos="fade-up" data-aos-delay="200">
+                    <img src="climate-temperature-map.png" alt="Global surface temperature anomaly map showing warming patterns across the Earth" style="width: 100%; max-width: 800px; height: auto; border-radius: 12px; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); margin: 2rem auto; display: block;">
+                    <p style="text-align: center; font-size: 0.875rem; color: #6b7280; margin-top: 1rem;">Global Temperature Anomaly Map - January 2025 showing record-breaking temperatures despite La Niña conditions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inequality Section -->
+    <section id="inequality" class="challenge-section inequality-bg">
+        <div class="container">
+            <div class="challenge-header" data-aos="fade-up">
+                <div class="challenge-icon">
+                    <i class="fas fa-balance-scale"></i>
+                </div>
+                <h2>Socio-Economic Inequality Crisis</h2>
+                <p class="challenge-subtitle">Persistent inequality creating opportunity gaps for billions, worsened by technological disruption</p>
+            </div>
+            
+            <div class="challenge-content">
+                <div class="challenge-stats" data-aos="fade-right">
+                    <div class="stat-card">
+                        <i class="fas fa-user-times"></i>
+                        <h3>800M+ in extreme poverty</h3>
+                        <p>Projected for 2025 despite decade of focus</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-briefcase"></i>
+                        <h3>57.8% in informal employment</h3>
+                        <p>2 billion people lack social protections</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-female"></i>
+                        <h3>Women do 2.5x more unpaid work</h3>
+                        <p>Gender inequality in care work</p>
+                    </div>
+                </div>
+                
+                <div class="challenge-visual" data-aos="fade-left">
+                    <div class="chart-container">
+                        <canvas id="inequalityChart" style="height: 400px;"></canvas>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="inequality-drivers" data-aos="fade-up">
+                <h3>Key Inequality Drivers</h3>
+                <div class="drivers-grid">
+                    <div class="driver-item">
+                        <i class="fas fa-robot"></i>
+                        <h4>AI & Technological Disruption</h4>
+                        <p>Rapid change threatens traditional jobs, especially for older workers</p>
+                        <div class="driver-stat">Affects 2B+ workers globally</div>
+                    </div>
+                    <div class="driver-item">
+                        <i class="fas fa-leaf"></i>
+                        <h4>Green Economy Transition</h4>
+                        <p>New jobs require reskilling, leaving many behind</p>
+                        <div class="driver-stat">Skills gap widens</div>
+                    </div>
+                    <div class="driver-item">
+                        <i class="fas fa-chart-line-down"></i>
+                        <h4>Economic Slowdown</h4>
+                        <p>Growth projected to weaken to 2.3% in 2025</p>
+                        <div class="driver-stat">$4T SDG financing gap</div>
+                    </div>
+                </div>
+                
+                <div class="challenge-image" data-aos="fade-up" data-aos-delay="200">
+                    <img src="global-income-growth.png" alt="Historical global income growth chart showing rising inequality trends" style="width: 100%; max-width: 700px; height: auto; border-radius: 12px; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); margin: 2rem auto; display: block;">
+                    <p style="text-align: center; font-size: 0.875rem; color: #6b7280; margin-top: 1rem;">Global Income Growth Trends (1820-2023) - Showing persistent and widening inequality patterns</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section id="solutions" class="solutions-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Innovative Solutions for Global Challenges</h2>
+                <p>Web-based interventions designed to rebuild trust, foster resilience, and bridge opportunity gaps</p>
+            </div>
+            
+            <div class="solutions-grid">
+                <!-- Trust Solutions -->
+                <div class="solution-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3><i class="fas fa-shield-alt"></i> Trust & Information Solutions</h3>
+                    <div class="solution-cards">
+                        <div class="solution-card">
+                            <h4>CivicCheck</h4>
+                            <p>Federated web platform empowering local truth-tellers and hyper-local rumor checking</p>
+                            <div class="solution-features">
+                                <span>Community Networks</span>
+                                <span>Local Verification</span>
+                                <span>Truth-teller Tools</span>
+                            </div>
+                        </div>
+                        <div class="solution-card">
+                            <h4>SourceGuard</h4>
+                            <p>Real-time AI source credibility scoring tool and browser extension</p>
+                            <div class="solution-features">
+                                <span>AI-Powered</span>
+                                <span>Real-time Scoring</span>
+                                <span>Browser Integration</span>
+                            </div>
+                        </div>
+                        <div class="solution-card">
+                            <h4>InfoSkills.org</h4>
+                            <p>Comprehensive, gamified digital literacy learning platform for all ages</p>
+                            <div class="solution-features">
+                                <span>Gamified Learning</span>
+                                <span>All Ages</span>
+                                <span>Cognitive Resilience</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Climate Solutions -->
+                <div class="solution-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3><i class="fas fa-leaf"></i> Climate & Environment Solutions</h3>
+                    <div class="solution-cards">
+                        <div class="solution-card">
+                            <h4>ResilienceReady</h4>
+                            <p>Personalized, address-level climate risk and resilience planning platform</p>
+                            <div class="solution-features">
+                                <span>Personalized Risk</span>
+                                <span>Local Adaptation</span>
+                                <span>Resilience Plans</span>
+                            </div>
+                        </div>
+                        <div class="solution-card">
+                            <h4>The Loop</h4>
+                            <p>Localized circular economy portal connecting users with repair, reuse, and sustainability services</p>
+                            <div class="solution-features">
+                                <span>Circular Economy</span>
+                                <span>Local Services</span>
+                                <span>Waste Reduction</span>
+                            </div>
+                        </div>
+                        <div class="solution-card">
+                            <h4>BioWatch</h4>
+                            <p>Citizen science portal for biodiversity monitoring and public engagement</p>
+                            <div class="solution-features">
+                                <span>Citizen Science</span>
+                                <span>Biodiversity Tracking</span>
+                                <span>Public Engagement</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Inequality Solutions -->
+                <div class="solution-category" data-aos="fade-up" data-aos-delay="300">
+                    <h3><i class="fas fa-handshake"></i> Equality & Opportunity Solutions</h3>
+                    <div class="solution-cards">
+                        <div class="solution-card">
+                            <h4>GreenPath</h4>
+                            <p>AI-driven platform mapping workers' skills to green economy roles with reskilling pathways</p>
+                            <div class="solution-features">
+                                <span>Skills Mapping</span>
+                                <span>Green Jobs</span>
+                                <span>Reskilling</span>
+                            </div>
+                        </div>
+                        <div class="solution-card">
+                            <h4>EthicaSource</h4>
+                            <p>Verified global e-commerce market for ethical, sustainable producers from marginalized communities</p>
+                            <div class="solution-features">
+                                <span>Ethical Commerce</span>
+                                <span>Global Market</span>
+                                <span>Community Support</span>
+                            </div>
+                        </div>
+                        <div class="solution-card">
+                            <h4>JUMPSTART</h4>
+                            <p>Mobile-first digital and financial inclusion education gateway for excluded populations</p>
+                            <div class="solution-features">
+                                <span>Mobile-First</span>
+                                <span>Financial Inclusion</span>
+                                <span>Education Gateway</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2>Understanding is the First Step</h2>
+                <p>These interconnected challenges require collective action. Stay informed, get involved, and be part of the solution.</p>
+                <div class="cta-buttons">
+                    <a href="#overview" class="btn btn-primary">Learn More</a>
+                    <a href="#solutions" class="btn btn-secondary">Explore Solutions</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-globe-americas"></i> Global Challenges 2025</h3>
+                    <p>Understanding tomorrow's biggest problems through data-driven insights and interactive exploration.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Data Sources</h4>
+                    <ul>
+                        <li>World Economic Forum Global Risks Report 2025</li>
+                        <li>UN Sustainable Development Goals Report 2025</li>
+                        <li>World Meteorological Organization</li>
+                        <li>International Labour Organization</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Key Statistics</h4>
+                    <ul>
+                        <li>35% of SDG targets on track</li>
+                        <li>120M+ forcibly displaced</li>
+                        <li>1.55°C temperature rise</li>
+                        <li>2B people in informal employment</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Global Challenges Dashboard. Data visualization for educational purposes.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html>
